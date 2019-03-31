@@ -99,11 +99,7 @@
         </li>
         
         <li class>
-            <a href="/categories/tech-notes" data-name="技术">技术</a>
-        </li>
-        
-        <li class>
-            <a href="/categories/humanities" data-name="人文">人文</a>
+            <a href="/categories/Course" data-name="Course">Course</a>
         </li>
         
         <li class>
@@ -133,9 +129,12 @@
             <em>·</em>2019-03-21
             
         </div>
-        <a class="post-title" href="/2019/03/21/sip/" target="_blank" title="Course-Signal and Image Processing">Course-Signal and Image Processing</a>
+        <a class="post-title" href="/2019/03/21/Course-sip/" target="_blank" title="Course-Signal and Image Processing">Course-Signal and Image Processing</a>
         <div class="post-meta">
             <a href="/tags" target="_blank"><i class="fa fa-tags"></i></a>
+            
+                <em>·</em>
+                <a href="http://yoursite.com/tags/Course/" target="_blank">Course</a>
             
         </div>
     </div>
@@ -158,9 +157,12 @@
             <em>·</em>2019-03-21
             
         </div>
-        <a class="post-title" href="/2019/03/21/cv/" target="_blank" title="Course-Computer Vison">Course-Computer Vison</a>
+        <a class="post-title" href="/2019/03/21/Course-cv/" target="_blank" title="Course-Computer Vison">Course-Computer Vison</a>
         <div class="post-meta">
             <a href="/tags" target="_blank"><i class="fa fa-tags"></i></a>
+            
+                <em>·</em>
+                <a href="http://yoursite.com/tags/Course/" target="_blank">Course</a>
             
         </div>
     </div>
@@ -227,6 +229,13 @@
             localSearch: { dbPath: '' },
             readMode: 'day'
         };
+        
+            jsi_config.localSearch = {
+                dbPath: '/search.xml',
+                trigger: 'auto',
+                topN: '1',
+                unescape: 'false'
+            }
         
         SimpleCore.init(jsi_config);
         

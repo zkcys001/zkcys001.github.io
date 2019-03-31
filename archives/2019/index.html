@@ -124,7 +124,7 @@
                     <ul class="archives_list">
                         
                         <li>21日18:30:29
-                            <a href="/2019/03/21/sip/">Course-Signal and Image Processing</a>
+                            <a href="/2019/03/21/Course-sip/">Course-Signal and Image Processing</a>
                             
                         </li>
                         
@@ -132,7 +132,7 @@
                 
                 
                         <li>21日18:20:58
-                            <a href="/2019/03/21/cv/">Course-Computer Vison</a>
+                            <a href="/2019/03/21/Course-cv/">Course-Computer Vison</a>
                             
                         </li>
                         
@@ -196,6 +196,13 @@
             localSearch: { dbPath: '' },
             readMode: 'day'
         };
+        
+            jsi_config.localSearch = {
+                dbPath: '/search.xml',
+                trigger: 'auto',
+                topN: '1',
+                unescape: 'false'
+            }
         
         SimpleCore.init(jsi_config);
         

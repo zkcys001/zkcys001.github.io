@@ -96,7 +96,15 @@
     <ul>
         <li><a href="/">Recent Posts</a></li>
         
-        
+            
+                <li class="active">
+                    <a href="/categories/Course" data-name="Course">Course</a>
+                </li>
+            
+                <li class>
+                    <a href="/categories/others" data-name="其他">其他</a>
+                </li>
+            
         
         <li class="page-search">
     <form id="search" class="search-form">
@@ -137,6 +145,8 @@
         </div>
         
         <div class="post-tags">Tags：
+            
+            <a href="/tags/Course/">Course</a>
             
         </div>
         
@@ -203,6 +213,13 @@
             localSearch: { dbPath: '' },
             readMode: 'day'
         };
+        
+            jsi_config.localSearch = {
+                dbPath: '/search.xml',
+                trigger: 'auto',
+                topN: '1',
+                unescape: 'false'
+            }
         
         SimpleCore.init(jsi_config);
         
